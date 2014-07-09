@@ -1,0 +1,29 @@
+{
+    "name": "cssify-test",
+    "version": "0.0.1",
+    "license": "MIT",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "cssify": "^0.5.1"
+    },
+    "browserify": {
+        "transform": [
+            "cssify"
+        ]
+    },
+    "atomify": {
+        "server": {
+            "lr": true,
+            "sync": {
+                "verbose": true
+            },
+            "open": true,
+            "path": "index.html"
+        },
+        "js": {
+            "entry": "main.js",
+            "alias": "app.js"
+        }
+    }
+}
